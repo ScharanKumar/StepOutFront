@@ -1,0 +1,49 @@
+# POST http://localhost:3030/api/signup
+# Content-Type: application/json
+
+# {
+#     "username":"Anu",
+#     "password":"Anu1",
+#     "email":"anu@gmail.com"
+# }
+
+# GET http://localhost:3030/register/get
+
+# POST http://localhost:3030/api/login
+# Content-Type: application/json
+
+# {
+#     "username":"Anu",
+#     "password":"Anu1"
+# }
+
+# POST http://localhost:3030/api/trains/create
+# Content-Type: application/json
+
+# {
+#     "train_name":"Chennai Express",
+#     "source":"Miyapur",
+#     "destination":"Borabanda",
+#     "seat_capacity":50,
+#     "arrival_time_at_source":"10:00:00",
+#     "arrival_time_at_destination":"15:30:00",
+#     "key":"123"
+# }
+
+GET http://localhost:3030/trains/get
+
+# GET http://localhost:3030/api/trains/availability?source=Miyapur&destination=Borabanda
+
+# POST http://localhost:3030/api/trains/1342204813/book
+# Content-Type: application/json
+
+# {
+#     "user_id":"109504",
+#     "no_of_seats":50
+# }
+
+# GET http://localhost:3030/seatsno/1342204813
+
+# GET http://localhost:3030/booking_details/get/109504
+
+# DELETE http://localhost:3030/delete/train/Anusha
